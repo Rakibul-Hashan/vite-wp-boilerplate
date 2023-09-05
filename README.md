@@ -200,4 +200,22 @@ Ref: [https://axios-http.com/docs/intro](https://axios-http.com/docs/intro)
 
     npm install axios
 
+## Vite-plugin-require for Vite:
+
+Ref: [https://www.npmjs.com/package/vite-plugin-require](https://www.npmjs.com/package/vite-plugin-require)
+
+  
+
+Install and use to achieve painless support require
+
+    npm i vite-plugin-require
+
+Import and add it as dependency:
+
+    import  vitePluginRequire  from  "vite-plugin-require";
+    export default defineConfig({
+    plugins: [react(),  vitePluginRequire.default()],
+    })
+
+
 
