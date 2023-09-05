@@ -164,3 +164,15 @@ Import and add it as dependency:
     export default defineConfig({
     plugins: [react(),  vitePluginRequire.default()],
     })
+
+## Environment variable for Vite:
+
+Ref: [https://www.npmjs.com/package/env-cmd](https://www.npmjs.com/package/env-cmd)
+
+A simple node program for executing commands using an environment from an env file.
+
+    npm install env-cmd
+
+or
+
+    npm install -g env-cmd

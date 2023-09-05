@@ -11,17 +11,9 @@ const Login = () => {
   } = useForm();
 
   const handleLogin = (loginData) => {
-    const siteUrl = "http://blanksite.com";
-    axios
-      .post(`${siteUrl}/wp-json/jwt-auth/v1/token`, loginData)
-      .then((res) => {
-        if (res.data.token === undefined)
-        {
-          setLoginError()
-        }
-         console.log(res.data);
-      })
-      .catch((err) => console.log(err));
+    const siteUrl = "http://vitewp.com";
+    axios.post(`${process.env.REACT_APP_API_TOKEN}`)
+  
     console.log(loginData);
   };
 
